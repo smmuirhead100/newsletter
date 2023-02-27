@@ -4,14 +4,18 @@
 }
 
 
+
 body {
+    background-image: linear-gradient(to bottom right, rgb(14, 13, 13), rgb(13, 87, 248));
+    height: 100vh;
+}
+
+.bodyContainer {
     font-family: xlimate;
     display: grid;
     grid-template-rows: 1fr 6fr;
-    background: rgb(49, 53, 57);
     align-items: center;
 }
-
 header {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -39,29 +43,31 @@ header {
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     min-height: 300px;
-    background-color: rgba(255, 255, 255, 0.689);
+    background-color: rgba(255, 255, 255, 0.405);
     border-radius: 5px;
 }
 
 .slogan {
     font-size: 3rem;
     text-align: center;
-    padding: 10%;
-}
 
-#signUp {
-    display: flex;
-    flex-direction: column;
-    padding: 5vh;
 }
 
 #signUpButton {
     border-radius: 10rem;
     border-style: solid;
-    width: 25vh;
-    height: 4vh;
+    width: 15rem;
+    height: 2rem;
     align-self: center;
+    text-align: center;
+    transition:.1s
+}
+
+#signUpButton:hover {
+    width: 15.1rem;
+    height: 2.1rem;
 }
